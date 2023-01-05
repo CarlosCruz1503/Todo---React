@@ -1,5 +1,5 @@
 import React from 'react'
-import StoreBanner from '../components/pure/store-banner'
+
 import PrimaryButton from '../components/pure/primary-button'
 import "../styles/home.css"
 import TaskListComponent from '../components/containers/TaskListComponent'
@@ -12,9 +12,6 @@ const Home = (props) => {
         <div className="home-menu">
           <span className="home-text06">HOME</span>
           <span className="home-text07">More proyects make for me</span>
-        </div>
-        <div className="home-container06">
-          <StoreBanner></StoreBanner>
         </div>
         <div data-role="BurgerMenu" className="home-burger-menu">
           <span className="home-text06">HOME</span>
