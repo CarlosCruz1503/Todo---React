@@ -11,7 +11,7 @@ const FilterComponent = () => {
 
     const stateTask = useContext(TaskContexto);
 
-    const initialValues = [{ filtro: stateTask.state, name: "ALL" }]
+    const initialValues =  [{ filtro: stateTask.state, name: "ALL" }]
 
     const FilterReducer = (state, action) => {
         switch (action.type) {

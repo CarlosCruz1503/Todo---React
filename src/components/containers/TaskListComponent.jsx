@@ -7,7 +7,7 @@ export const TaskContexto = React.createContext()
 
 
 const initalState = () => {
-    if (localStorage.getItem("tasks").length < 0) {
+    if (localStorage.getItem("tasks").length === null) {
         return []
     } else {
         return JSON.parse(localStorage.getItem("tasks"))
