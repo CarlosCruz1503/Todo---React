@@ -1,5 +1,18 @@
+body {
+  margin-top: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .App {
   text-align: center;
+}
+.card-col{
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -35,4 +48,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.card{
+  width: 25rem;
 }
