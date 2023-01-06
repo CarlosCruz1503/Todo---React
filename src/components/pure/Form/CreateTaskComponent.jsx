@@ -20,7 +20,7 @@ const CreateTaskComponent = ({ }) => {
                     <input type="text" class="form-control" placeholder="Description" ref={descriptionRef} />
                 </div>
                 <div className='div-form-select'>
-                    <label> Urgency of task </label>
+                    <label class="text-center"> Urgency of task </label>
                     <div >
                         <select name="select" class="form-select new-task-select" ref={importantRef} defaultValue="NORMAL">
                             <option value="NORMAL">Normal</option>
@@ -47,6 +47,8 @@ const CreateTaskComponent = ({ }) => {
                 filterState.dispatch({
                     type: "FILTER_ALL",
                 })
+                nameRef.current.value = ""
+                descriptionRef.current.value = ""
             }}> Add Task  </button>
         </form>
     );

@@ -40,7 +40,7 @@ const Navbar = () => {
                     <input type="checkbox" class="dd-input" id="test" />
                     <ul class="dd-menu">
                         <a href="https://calculadoracarloscruz.netlify.app/" target="_blank"><li>Calculadora en JS</li></a>
-                        <a href="https://coto-qqma.onrender.com/">
+                        <a href="https://coto-qqma.onrender.com/" target="_blank">
                             <li>Crud En Django
                                 <p className='text-django'>La web se demora un poco en cargar</p>
                                 <p className='text-django'>es BackEnd en un server gratuito</p>
