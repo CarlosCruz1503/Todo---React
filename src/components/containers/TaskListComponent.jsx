@@ -52,8 +52,8 @@ const TaskListComponent = () => {
         if (state.length < 1) {
             return (
                 <div>
-                    <h3>Aún no tienes tareas </h3>
-                    <p>si quieres puedes crear nuevas tareas</p>
+                    <h3 class="text-center">You do not have any tasks yet </h3>
+                    <h4 class="text-center">If you want you can create new tasks</h4>
                 </div>
             )
         }
@@ -71,7 +71,7 @@ const TaskListComponent = () => {
                             Your Tasks:
                         </h3>
                     </div>
-                    <div className="card-body" data-mdb-perfect-scrollbar="true" style={{ position: "relative", height: "400px" }}>
+                    <div className="card-body p-3" data-mdb-perfect-scrollbar="true" style={{ position: "relative" }}>
                         <FilterComponent></FilterComponent>
                     </div>
                 </div>

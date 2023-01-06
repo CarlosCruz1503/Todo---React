@@ -1,0 +1,49 @@
+:root {
+    --dl-color-gray-300: #d9dbe1ff;
+    --dl-color-gray-700: #969babff;
+    --dl-color-gray-800: #474a57ff;
+    --dl-color-gray-900: #18191fff;
+    --dl-color-pink-100: #ffb1e6ff;
+    --dl-color-pink-800: #ff72d2ff;
+    --dl-size-size-unit: 1rem;
+    --dl-color-gray-black: #000000ff;
+    --dl-color-gray-white: #FFFFFF;
+    --dl-color-orange-100: #ffe3c1ff;
+    --dl-color-orange-800: #ffc278ff;
+    --dl-color-purple-100: #f1e4ffff;
+    --dl-color-purple-800: #d6b1ffff;
+    --dl-color-purple-900: #ac69f8ff;
+    --dl-space-space-unit: 1rem;
+    --dl-color-purple-1000: #6209c6ff;
+    --dl-color-pink-default: #f22bb2ff;
+    --dl-size-size-halfunit: 0.5rem;
+    --dl-color-turquoise-100: #d5fafcff;
+    --dl-color-turquoise-800: #75e3eaff;
+    --dl-radius-radius-round: 50%;
+    --dl-color-orange-default: #fe9a22ff;
+    --dl-color-purple-default: #8c30f5ff;
+    --dl-size-size-doubleunit: 2rem;
+    --dl-size-size-tripleunit: 3rem;
+    --dl-space-space-halfunit: 0.5rem;
+    --dl-radius-radius-radius2: 2px;
+    --dl-radius-radius-radius4: 4px;
+    --dl-radius-radius-radius6: 6px;
+    --dl-radius-radius-radius8: 8px;
+    --dl-space-space-doubleunit: 2rem;
+    --dl-space-space-tripleunit: 3rem;
+    --dl-color-turquoise-default: #2ec5ceff;
+}
+.Headline1 { 
+    font-size: 72px;
+    font-family: Inter;
+    font-weight: 800;
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .Headline1 { 
+        font-size: 60px;
+    }
+}

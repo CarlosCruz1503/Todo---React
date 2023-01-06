@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { TaskContexto } from '../containers/TaskListComponent';
-import "../../styles/task.scss";
+import "../../styles/sass/task.scss";
 import { FilterContext } from '../containers/FilterComponent';
 
 const TaskComponent = ({ task, index }) => {
@@ -28,9 +28,20 @@ const TaskComponent = ({ task, index }) => {
                         complete: false
                     }
                 })
-                filtros.dispatch({
-                    type: "FILTER_ACTIVE",
-                })
+                if (filtros.state[0].name === "ALL") {
+                    filtros.dispatch({
+                        type: "FILTER_ALL",
+                    })
+                } else if (filtros.state[0].name === "COMPLETED") {
+                    filtros.dispatch({
+                        type: "FILTER_COMPLETED",
+                    })
+                } else if (filtros.state[0].name === "ACTIVE") {
+                    filtros.dispatch({
+                        type: "FILTER_ACTIVE",
+                    })
+                }
+
             }} className="bi bi-toggle-on task-action" style={{ color: "green", fontSize: "1.4rem" }}></i>)
         } else {
             return (<i onClick={() => {
@@ -41,9 +52,19 @@ const TaskComponent = ({ task, index }) => {
                         complete: true
                     }
                 })
-                filtros.dispatch({
-                    type: "FILTER_COMPLETED",
-                })
+                if (filtros.state[0].name === "ALL") {
+                    filtros.dispatch({
+                        type: "FILTER_ALL",
+                    })
+                } else if (filtros.state[0].name === "COMPLETED") {
+                    filtros.dispatch({
+                        type: "FILTER_COMPLETED",
+                    })
+                } else if (filtros.state[0].name === "ACTIVE") {
+                    filtros.dispatch({
+                        type: "FILTER_ACTIVE",
+                    })
+                }
             }
             } className="bi bi-toggle-off task-action" style={{ color: "gray", fontSize: "1.4rem" }}></i>)
         }
@@ -51,9 +72,9 @@ const TaskComponent = ({ task, index }) => {
 
     return (
         <tr className={task.completed ? "fw-normal task-completed" : "fw-normal task-pending"}>
-            <th>
+            <td>
                 <span className='ms-2'>{task.name}</span>
-            </th>
+            </td>
             <td className='align-middle'>
                 <span className='ms-2'>{task.description}</span>
             </td>

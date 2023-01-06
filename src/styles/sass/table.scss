@@ -1,0 +1,164 @@
+.filter-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #3d3f50c7;
+}
+
+.table-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    table {
+        width: auto;
+
+        .task-completed {
+            color: rgb(25, 126, 25);
+            text-decoration: line-through;
+            font-size: 1.4rem;
+        }
+
+
+        th {
+            padding: 0rem 3rem;
+        }
+
+        td {
+            max-width: 30rem;
+
+            span {
+                margin: 0rem 0.1rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .table-task {
+        table {
+            th {
+                padding: 0rem 2rem;
+            }
+
+            td {
+                max-width: 20rem;
+
+                span {
+                    font-size: 1.3rem;
+
+                    .badge {
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table-task {
+        table {
+            th {
+                padding: 1rem;
+            }
+
+            td {
+                max-width: 17rem;
+                
+
+                span {
+                    font-size: 1.2rem;
+
+                    .badge {
+                        font-size: 0.9rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .table-task {
+        table {
+            th {
+                padding:  1rem;
+            }
+
+            td {
+                max-width: 10rem;
+
+                span {
+                    font-size: 1.1rem;
+
+                    .badge {
+                        font-size: 0.8rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .table-task {
+        table {
+            th {
+                padding: 1rem;
+            }
+
+            td {
+                max-width: 10rem;
+
+                span {
+                    font-size: 1rem;
+
+                    .badge {
+                        font-size: 0.8rem;
+                    }
+                }
+
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 420px) {
+    .table-task {
+        table {
+            th {
+                padding: 1rem;
+            }
+
+            td {
+                max-width: 5rem;
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 368px) {
+    .table-task {
+        table {
+            th {
+                padding: 1rem;
+            }
+
+            td {
+                max-width: 3rem;
+
+            }
+        }
+    }
+}

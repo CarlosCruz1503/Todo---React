@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { FilterContext } from '../containers/FilterComponent';
 import { TaskContexto } from '../containers/TaskListComponent';
 import TaskComponent from '../pure/TaskComponent';
+import "../../styles/sass/table.scss"
 
 const Table = () => {
 
@@ -19,33 +20,35 @@ const Table = () => {
             if (state.length > 0) {
                 return (
                     <div>
-                        <h2>{stateFilter.state[0].name}</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Description</th>
-                                    <th scope="col">Priority</th>
-                                    <th scoper="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    state[0].map((task, index) => {
-                                        return (
-                                            (<TaskComponent
-                                                key={index}
-                                                task={task}
-                                                index={index}
-                                            >
-                                            </TaskComponent>)
-                                        )
-                                    })
-                                }
-                                {/** Iterar sobre una lista de tareas */}
-                            </tbody>
+                        <h2 className="filter-title">{stateFilter.state[0].name}</h2>
+                        <div className='table-task'>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col-table">Title</th>
+                                        <th scope="col-table">Description</th>
+                                        <th scope="col-table">Priority</th>
+                                        <th scoper="col-table">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        state[0].map((task, index) => {
+                                            return (
+                                                (<TaskComponent
+                                                    key={index}
+                                                    task={task}
+                                                    index={index}
+                                                >
+                                                </TaskComponent>)
+                                            )
+                                        })
+                                    }
+                                    {/** Iterar sobre una lista de tareas */}
+                                </tbody>
 
-                        </table>
+                            </table>
+                        </div>
                     </div>
                 )
             } else {

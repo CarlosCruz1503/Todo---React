@@ -3,6 +3,7 @@ import FilterButtons from '../pure/FilterButtonsComponent';
 import { TaskContexto } from './TaskListComponent';
 import Table from '../pure/Table';
 import CreateTaskComponent from '../pure/Form/CreateTaskComponent';
+import "../../styles/sass/card.scss"
 
 
 export const FilterContext = React.createContext()
@@ -11,7 +12,7 @@ const FilterComponent = () => {
 
     const stateTask = useContext(TaskContexto);
 
-    const initialValues =  [{ filtro: stateTask.state, name: "ALL" }]
+    const initialValues = [{ filtro: stateTask.state, name: "ALL" }]
 
     const FilterReducer = (state, action) => {
         switch (action.type) {
@@ -36,10 +37,11 @@ const FilterComponent = () => {
 
     return (
         <FilterContext.Provider value={{ state, dispatch }}>
-            <div>
+            <div class="card-container">
+                <FilterButtons></FilterButtons>
                 <Table></Table>
                 <CreateTaskComponent></CreateTaskComponent>
-                <FilterButtons></FilterButtons>
+
             </div>
         </FilterContext.Provider>
     );

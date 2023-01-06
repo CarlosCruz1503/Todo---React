@@ -1,46 +1,34 @@
 import React from 'react'
-
-import PrimaryButton from '../components/pure/primary-button'
-import "../styles/home.css"
+import "../styles/sass/home.scss"
 import TaskListComponent from '../components/containers/TaskListComponent'
+import Navbar from '../components/containers/navbar'
 
 const Home = (props) => {
   return (
     <div className="home-container">
-      <header className="home-header">
-        <div className="home-logo1"></div>
-        <div className="home-menu">
-          <span className="home-text06">HOME</span>
-          <span className="home-text07">More proyects make for me</span>
-        </div>
-        <div data-role="BurgerMenu" className="home-burger-menu">
-          <span className="home-text06">HOME</span>
-          <span className="home-text07">More proyects make for me</span>
-        </div>
-      </header>
+      <Navbar></Navbar>
       <div className="home-main">
         <div className="home-blur-background"></div>
         <div className="home-hero">
-          <h1 className="Headline1 home-text08">Organize Your Task</h1>
-
-          <div className="home-container07"></div>
+          <h1 className="Headline1">Organize Your Task</h1>
+          <div className="home-container01"></div>
           <TaskListComponent></TaskListComponent>
-          <PrimaryButton button="Me gusta Esta Web"></PrimaryButton>
+
         </div>
       </div>
       <div className="home-c-t-a"></div>
       <div className="home-footer">
-        <footer className="home-container08">
-          <div className="home-container09">
-            <span className="home-text09">Home</span>
-            <span className="home-text10">More projects make for me</span>
+        <footer className="footer-container">
+          <div className="footer-container2">
+            <a href=""><span className="footer-text">Home</span></a>
+            <a href="https://www.linkedin.com/in/carlos-jose-cruz-luengas/" target="_blank"><span className="footer-text"><i class="bi bi-linkedin" style={{ fontSize: "1.2rem" }} ></i></span></a>
+            <a href="https://github.com/" target="_blank"><span className="footer-text"><i class="bi bi-github" style={{ fontSize: "1.2rem" }} ></i></span></a>
           </div>
           <div className="home-divider"></div>
-          <div className="home-container10">
-            <span className="home-text11 Body2">
-              © 2023 Make with (N) por Carlos Cruz
-            </span>
-          </div>
+
+          <span className="home-copyrigth-text Body2">
+            <h5>© 2023 Make with <i class="bi bi-heart-fill" style={{ color: "red" }}></i> by Carlos Cruz</h5>
+          </span>
         </footer>
       </div>
     </div>

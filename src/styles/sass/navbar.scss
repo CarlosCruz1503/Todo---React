@@ -1,0 +1,211 @@
+.navbar {
+    width: 100%;
+
+    .header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 0rem 3rem;
+        height: 100%;
+
+        .header-options {
+            font-weight: 700;
+            margin: 0 1rem;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 5px 10px 5px;
+        }
+        .header-options:hover {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            z-index:200;
+        }
+        .header-options-title{
+            padding: 10px 10px 10px 10px;
+        }
+
+        .header-django {
+            font-weight: 700;
+            margin: 0 0.2rem;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 5px;
+            border: #000000 solid 1px;
+            border-radius: 1rem;
+            text-decoration: none;
+            color: #000000;
+        }
+        .header-django:hover {
+            background-color: #ffffff;
+            border: none;
+        }
+        .django-modal-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .a-nav{
+            text-decoration: none;
+            .header-options-projects {
+                font-weight: 700;
+                margin: 0 0.2rem;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 5px;
+                border: #000000 solid 1px;
+                border-radius: 1rem;
+                text-decoration: none;
+                color: #000000;
+            }
+            .header-options-projects:hover {
+                background-color: #ffffff;
+                border: none;
+            }
+        }
+        
+
+
+        .dropdown {
+            display: none;
+            position: relative;
+            z-index: 101;
+        }
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .navbar {
+        width: 100%;
+
+        .header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            width: 100%;
+            margin: 0rem 3rem;
+            height: 100%;
+
+            .header-options {
+                display: none;
+            }
+            .header-django {
+                display: none;
+            }
+            .a-nav{
+                display: none;
+            }
+
+            .dropdown {
+                display: inline-block;
+                position: relative;
+                z-index: 101;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000000;
+            }
+
+            a:hover {
+                color: #222222
+            }
+
+            /* Dropdown */
+
+            .dropdown {
+                display: inline-block;
+                position: relative;
+                z-index: 101;
+            }
+
+            .dd-button {
+                display: inline-block;
+                border-radius: 4px;
+                padding: 10px 30px 10px 20px;
+                background-color: #ffffff;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+
+            .dd-button:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid black;
+            }
+
+            .dd-button:hover {
+                background-color: #eeeeee;
+            }
+
+
+            .dd-input {
+                display: none;
+            }
+
+            .dd-menu {
+                position: absolute;
+                top: 100%;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 0;
+                margin: 2px 0 0 0;
+                box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+                background-color: #ffffff;
+                list-style-type: none;
+            }
+
+            .dd-input+.dd-menu {
+                display: none;
+            }
+
+            .dd-input:checked+.dd-menu {
+                display: block;
+            }
+
+            .dd-menu li {
+                padding: 10px 20px;
+                cursor: pointer;
+                white-space: nowrap;
+                text-align: center;
+            }
+
+            .dd-menu li:hover {
+                background-color: #f6f6f6;
+            }
+
+            .dd-menu li a {
+                display: block;
+                margin: -10px -20px;
+                padding: 10px 20px;
+            }
+
+            .text-django {
+                font-size: 0.78rem;
+                padding: 0;
+                margin: 0;
+            }
+
+            .dd-menu li.divider {
+                padding: 0;
+                border-bottom: 1px solid #cccccc;
+            }
+        }
+    }
+
+
+}

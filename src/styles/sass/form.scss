@@ -1,0 +1,24 @@
+.form-task{
+    margin-top: 5rem;
+}
+.form-task-title{
+    text-align: center;
+}
+.form{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    .new-task-select{
+        height: 100%;
+    }
+}
+.btn-task-form{
+    width: 100%;
+}
+.div-form-select{
+    height: 100%;
+    margin: 0 1rem;
+    .new-task-select{
+        height: 100%;
+    }
+}

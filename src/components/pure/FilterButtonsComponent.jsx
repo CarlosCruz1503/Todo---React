@@ -7,13 +7,13 @@ const FilterButtons = () => {
 
     return (
         <div>
-            <button onClick={() => filterState.dispatch({
+            <button class="buttons-filter" onClick={() => filterState.dispatch({
                 type:"FILTER_ALL"
             })}>ALL</button>
-            <button onClick={() => filterState.dispatch({
+            <button class="buttons-filter" onClick={() => filterState.dispatch({
                 type:"FILTER_COMPLETED"
-            })}>Completed</button>
-            <button onClick={() => filterState.dispatch({
+            })}>COMPLETED</button>
+            <button  class="buttons-filter" onClick={() => filterState.dispatch({
                 type:"FILTER_ACTIVE"
             })}>ACTIVE</button>
         </div>
