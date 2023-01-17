@@ -22,7 +22,7 @@ const Home = (props) => {
           <div className="footer-container2">
             <a href=""><span className="footer-text">Home</span></a>
             <a href="https://www.linkedin.com/in/carlos-jose-cruz-luengas/" target="_blank"><span className="footer-text"><i class="bi bi-linkedin" style={{ fontSize: "1.2rem" }} ></i></span></a>
-            <a href="https://github.com/" target="_blank"><span className="footer-text"><i class="bi bi-github" style={{ fontSize: "1.2rem" }} ></i></span></a>
+            <a href="https://github.com/CarlosCruz1503" target="_blank"><span className="footer-text"><i class="bi bi-github" style={{ fontSize: "1.2rem" }} ></i></span></a>
           </div>
           <div className="home-divider"></div>
 
