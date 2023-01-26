@@ -1,12 +1,10 @@
 import React from 'react'
 import "../styles/sass/home.scss"
 import TaskListComponent from '../components/containers/TaskListComponent'
-import Navbar from '../components/containers/navbar'
 
 const Home = (props) => {
   return (
     <div className="home-container">
-      <Navbar></Navbar>
       <div className="home-main">
         <div className="home-blur-background"></div>
         <div className="home-hero">
